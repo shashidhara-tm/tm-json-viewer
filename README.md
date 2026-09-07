@@ -1,4 +1,4 @@
-# react-json-viewer-lite
+# tm-json-viewer-lite
 
 A lightweight, dependency-free React component for viewing JSON data as an expandable,
 searchable, syntax-highlighted tree. Ships as ESM + CommonJS with TypeScript declarations, and
@@ -19,7 +19,7 @@ injects its own styles at runtime — no CSS import or bundler config required.
 ## Installation
 
 ```bash
-npm install react-json-viewer-lite
+npm install tm-json-viewer-lite
 ```
 
 `react` and `react-dom` (>=17) are peer dependencies and must already be installed in your app.
@@ -27,7 +27,7 @@ npm install react-json-viewer-lite
 ## Usage
 
 ```tsx
-import { JsonViewer } from 'react-json-viewer-lite';
+import { JsonViewer } from 'tm-json-viewer-lite';
 
 const data = {
   id: 1,
@@ -144,4 +144,5 @@ npm run build:demo
 ## License
 
 MIT
+
 # tm-json-viewer

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { JsonViewer } from 'react-json-viewer-lite';
+import { JsonViewer } from 'tm-json-viewer-lite';
 import { basicData, circularExample, largeNestedData } from './sampleData';
 import './App.css';
 
@@ -9,7 +9,7 @@ export function App() {
   return (
     <div className="demo-app" data-dark={dark}>
       <header className="demo-header">
-        <h1>react-json-viewer-lite</h1>
+        <h1>tm-json-viewer-lite</h1>
         <p>A lightweight, themeable, accessible JSON tree viewer for React.</p>
       </header>
 
