@@ -1,0 +1,72 @@
+{
+  "name": "tm-json-viewer-lite",
+  "version": "0.1.0",
+  "description": "A lightweight, themeable, accessible React component for viewing and exploring JSON data as an expandable tree.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "vite -c demo/vite.config.ts",
+    "build": "tsup",
+    "build:demo": "vite build -c demo/vite.config.ts",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run lint && npm run test && npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.15.0",
+    "@typescript-eslint/parser": "^8.15.0",
+    "@vitejs/plugin-react": "^4.3.3",
+    "eslint": "^9.15.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "jsdom": "^25.0.1",
+    "prettier": "^3.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.5"
+  },
+  "keywords": [
+    "react",
+    "json",
+    "json-viewer",
+    "json-tree",
+    "component"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Shashidhara",
+    "email": "shashidhar@taskmonk.ai",
+    "url": "https://www.taskmonk.ai"
+  },
+  "company": "Taskmonk Technology Pvt Ltd"
+}
